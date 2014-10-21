@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+}
+
+ul {
+    list-style: none;
+}
+
+.circle {
+    position: relative;
+    width: 537px;
+    height: 537px;
+    margin: 0 50px 50px 0 ;
+    float: left;
+}
+
+.circle-center {
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: blue;
+    color: #fff;
+}
+
+.circle-center span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+ul li ul li div {
+    position: absolute;
+    overflow: hidden;
+    width: 137px;
+    height: 137px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+ul li ul li div span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}

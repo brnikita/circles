@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="circlesApp">
+<head>
+    <meta charset="utf-8">
+    <title>Circles</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/vendors/angular.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/services.js"></script>
+</head>
+<body ng-controller="CirclesCtrl">
+<ul>
+    <li class="circle" ng-repeat="circle in circles">
+        <div class="circle-center" ng-style="{'top' : circles.coordinateY, 'left' : circles.coordinateX}">
+            <span>Circle</span>
+        </div>
+        <ul>
+            <li ng-repeat="subCircle in circle.circles">
+                <div ng-style="{'top' : subCircle.coordinateY, 'left' : subCircle.coordinateX}" >
+                    <img ng-src="{{subCircle.src}}"/>
+                    <span>{{subCircle.title}}</span>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
