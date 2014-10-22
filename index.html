@@ -12,11 +12,11 @@
 <body ng-controller="CirclesCtrl">
 <ul>
     <li class="circle" ng-repeat="circle in circles">
-        <div class="circle-center" ng-style="{'top' : circles.coordinateY, 'left' : circles.coordinateX}">
+        <div class="circle-center">
             <span>Circle</span>
         </div>
         <ul>
-            <li ng-repeat="subCircle in circle.circles">
+            <li ng-repeat="subCircle in circle">
                 <div ng-style="{'top' : subCircle.coordinateY, 'left' : subCircle.coordinateX}" >
                     <img ng-src="{{subCircle.src}}"/>
                     <span>{{subCircle.title}}</span>

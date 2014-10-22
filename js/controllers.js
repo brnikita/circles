@@ -11,9 +11,7 @@ circlesControllers.controller('CirclesCtrl', ['$scope', '$http', 'setPositions',
 
             subCircles = setPositions(value.circle, 200, 200, 200);
 
-            this.push({
-                circles: subCircles
-            });
+            this.push(subCircles);
         }, circles);
 
         $scope.circles = circles;
